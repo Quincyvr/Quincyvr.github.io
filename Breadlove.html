@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body{
+    background-color:coral;
+    
+}
+    
+    .navbar {
+background-color: salmon;
+color: rgb(0, 0, 0);;
+border-bottom:0.5px solid black;
+width: 100%;
+line-height: 80px;
+height: 80px;
+font-size: 18px;
+padding: 0 30px;
+position: absolute;
+top:0;
+left:0;
+font-family: monospace;
+}
+.navbar a{
+text-decoration: none;
+color:rgb(60, 60, 245);
+}
+.navbar a.nav-logo{
+float:left;
+height: inherit;
+line-height: inherit;
+padding: 0 30px;
+font-size: 40px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-family: "Koulen";
+color:#d8d8d8;
+font-weight: bold;
+}
+.navbar ui{
+float:right;
+list-style: none;
+height: inherit;
+line-height: inherit;
+padding: 0 50px;
+}
+.navbar ui li{
+display: inline-block;
+}
+.navbar ui li a{
+display: square;
+text-align: center;
+min-width: 120px;
+padding: 0 30px;
+}
+.navbar ui li a:hover {
+background-color: black;
+}
+
+ </style>
+
+
+<head>
+  
+
+  <br>  <nav class='navbar'>
+    <ui>
+       <li><a href="parallax.html"> Contact us
+       </a></li>
+       <li><a href="blobfis.html"> Information about blob fish
+       </a></li>
+       <li> <a href="hompage.html"> return to homepage </a></li>
+       <li> <a href="about us.html"> about us</a></li>
+      </ui>
+    </nav> 
+
+
+
+</script>
+</head>
+<body background="">
+
+
+
+
+
+</body>
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "88e2772c-3da6-47ea-828c-12c2e508250e", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "76294c0b-175a-4e4f-8a4f-49841465d24f", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+      document.head.appendChild(t);
+    });
+  </script>
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </html>

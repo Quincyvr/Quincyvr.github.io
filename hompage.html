@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+        
+                .navbar {
+            background-color: salmon;
+            color: rgb(0, 0, 0);;
+            border-bottom:0.5px solid black;
+            width: 100%;
+            line-height: 80px;
+            height: 80px;
+            font-size: 18px;
+            padding: 0 30px;
+            position: absolute;
+            top:0;
+            left:0;
+            font-family: monospace;
+        }
+        .navbar a{
+            text-decoration: none;
+            color:rgb(252, 0, 0);
+        }
+        .navbar a.nav-logo{
+            float:left;
+            height: inherit;
+            line-height: inherit;
+            padding: 0 30px;
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: "Koulen";
+            color:#d8d8d8;
+            font-weight: bold;
+        }
+        .navbar ui{
+            float:right;
+            list-style: none;
+            height: inherit;
+            line-height: inherit;
+            padding: 0 50px;
+        }
+        .navbar ui li{
+            display: inline-grid;
+        }
+        .navbar ui li a{
+            display: inline-grid ;
+            text-align: center;
+            min-width: 120px;
+            padding: 0 30px;
+        }
+        .navbar ui li a:hover {
+            background-color: rgb(243, 169, 10);
+        }
+body{
+    background-color:coral;
+    
+}
+    .headerTwoDiv{
+		 
+            font-size: 50px;
+            text-align: center;
+
+		}
+
+ </style>
+
+<head>
+
+
+
+
+
+
+ <br>  <nav class='navbar'>
+    <ui>
+       <li><a href="Breadlove.html"> Information about brEad</a> </li> 
+       </a></li>
+       <li><a href="blobfis.html"> Information about blob fish
+       </a></li>
+       <li><a href="about us.html"> about us</a></li>
+       <li><a href="parallax.html"> contact us  </a></li>
+
+
+    </ui>
+    </nav> 
+</a>
+
+        <a href="blobfis.html">
+        </a>
+      
+   <br>
+   <br>
+    <i><b><h1 style="color: royalblue" class="headerTwoDiv"> BREAD AND BLOB FISH</h1></b> </i>
+    
+ </a>
+
+
+
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJHcwL7UdHH9B10yoQyeferC8PTYk69KEoOg&usqp=CAU"
+    height="300px" align="right">
+    <img src="data:image/jpeg;base64,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"
+    height="300px" align="left" >
+    <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    <h3 align="center" >
+    Many people have asked me why I chose to do a website about bread and I just tell them to get lost and burn  
+    </h3>
+
+    <h1 align="center"> we do be making bad choices around here </h1>
+    
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Crowd Simulator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <iframe align="center" src="https://www.adultswim.com/etcetera/elastic-man/" height="600px" width="500px" ></iframe>
+<!-- partial:index.partial.html -->
+<canvas id="canvas"></canvas>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script><script  src="./script.js"></script>
+  <script>
+console.clear();
+console.log('lsakdfalskjdflnksd');
+
+const config = {
+  src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/open-peeps-sheet.png',
+  rows: 15,
+  cols: 7 };
+
+
+// UTILS
+
+const randomRange = (min, max) => min + Math.random() * (max - min);
+
+const randomIndex = array => randomRange(0, array.length) | 0;
+
+const removeFromArray = (array, i) => array.splice(i, 1)[0];
+
+const removeItemFromArray = (array, item) => removeFromArray(array, array.indexOf(item));
+
+const removeRandomFromArray = array => removeFromArray(array, randomIndex(array));
+
+const getRandomFromArray = (array) =>
+array[randomIndex(array) | 0];
+
+
+// TWEEN FACTORIES
+
+const resetPeep = ({ stage, peep }) => {
+  const direction = Math.random() > 0.5 ? 1 : -1;
+  // using an ease function to skew random to lower values to help hide that peeps have no legs
+  const offsetY = 100 - 250 * gsap.parseEase('power2.in')(Math.random());
+  const startY = stage.height - peep.height + offsetY;
+  let startX;
+  let endX;
+
+  if (direction === 1) {
+    startX = -peep.width;
+    endX = stage.width;
+    peep.scaleX = 1;
+  } else {
+    startX = stage.width + peep.width;
+    endX = 0;
+    peep.scaleX = -1;
+  }
+
+  peep.x = startX;
+  peep.y = startY;
+  peep.anchorY = startY;
+
+  return {
+    startX,
+    startY,
+    endX };
+
+};
+
+const normalWalk = ({ peep, props }) => {
+  const {
+    startX,
+    startY,
+    endX } =
+  props;
+
+  const xDuration = 10;
+  const yDuration = 0.25;
+
+  const tl = gsap.timeline();
+  tl.timeScale(randomRange(0.5, 1.5));
+  tl.to(peep, {
+    duration: xDuration,
+    x: endX,
+    ease: 'none' },
+  0);
+  tl.to(peep, {
+    duration: yDuration,
+    repeat: xDuration / yDuration,
+    yoyo: true,
+    y: startY - 50 },
+  1);
+
+  return tl;
+};
+
+const walks = [
+normalWalk];
+
+
+// CLASSES
+
+class Peep {
+  constructor({
+    image,
+    rect })
+  {
+    this.image = image;
+    this.setRect(rect);
+
+    this.x = 0;
+    this.y = 20;
+    this.anchorY = 0;
+    this.scaleX = 3;
+    this.walk = null;
+  }
+
+  setRect(rect) {
+    this.rect = rect;
+    this.width = rect[2];
+    this.height = rect[3];
+
+    this.drawArgs = [
+    this.image,
+    ...rect,
+    0, 0, this.width, this.height];
+
+  }
+
+  render(ctx) {
+    ctx.save();
+    ctx.translate(this.x, this.y);
+    ctx.scale(this.scaleX, 1);
+    ctx.drawImage(...this.drawArgs);
+    ctx.restore();
+  }}
+
+
+// MAIN
+
+const img = document.createElement('img');
+img.onload = init;
+img.src = config.src;
+
+const canvas = document.querySelector('#canvas');
+const ctx = canvas.getContext('2d');
+
+const stage = {
+  width: 0,
+  height: 100 };
+
+
+const allPeeps = [];
+const availablePeeps = [];
+const crowd = [];
+
+function init() {
+  createPeeps();
+
+  // resize also (re)populates the stage
+  resize();
+
+  gsap.ticker.add(render);
+  window.addEventListener('resize', resize);
+}
+
+function createPeeps() {
+  const {
+    rows,
+    cols } =
+  config;
+  const {
+    naturalWidth: width,
+    naturalHeight: height } =
+  img;
+  const total = rows * cols;
+  const rectWidth = width / rows;
+  const rectHeight = height / cols;
+
+  for (let i = 0; i < total; i++) {
+    allPeeps.push(new Peep({
+      image: img,
+      rect: [
+      i % rows * rectWidth,
+      (i / rows | 0) * rectHeight,
+      rectWidth,
+      rectHeight] }));
+
+
+  }
+}
+
+function resize() {
+  stage.width = canvas.clientWidth;
+  stage.height = canvas.clientHeight;
+  canvas.width = stage.width * devicePixelRatio;
+  canvas.height = stage.height * devicePixelRatio;
+
+  crowd.forEach(peep => {
+    peep.walk.kill();
+  });
+
+  crowd.length = 0;
+  availablePeeps.length = 0;
+  availablePeeps.push(...allPeeps);
+
+  initCrowd();
+}
+
+function initCrowd() {
+  while (availablePeeps.length) {
+    // setting random tween progress spreads the peeps out
+    addPeepToCrowd().walk.progress(Math.random());
+  }
+}
+
+function addPeepToCrowd() {
+  const peep = removeRandomFromArray(availablePeeps);
+  const walk = getRandomFromArray(walks)({
+    peep,
+    props: resetPeep({
+      peep,
+      stage }) }).
+
+  eventCallback('onComplete', () => {
+    removePeepFromCrowd(peep);
+    addPeepToCrowd();
+  });
+
+  peep.walk = walk;
+
+  crowd.push(peep);
+  crowd.sort((a, b) => a.anchorY - b.anchorY);
+
+  return peep;
+}
+
+function removePeepFromCrowd(peep) {
+  removeItemFromArray(crowd, peep);
+  availablePeeps.push(peep);
+}
+
+function render() {
+  canvas.width = canvas.width;
+  ctx.save();
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+
+  crowd.forEach(peep => {
+    peep.render(ctx);
+  });
+
+  ctx.restore();
+}
+
+
+
+
+
+  </script>
+</body>
+</html>
+
+
+
+ 
+
+
+
